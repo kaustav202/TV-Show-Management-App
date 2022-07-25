@@ -12,7 +12,7 @@ End to End Full Stack Application for easy management and tracking of shows and 
 
 ## Project Setup
 
--  mysql should to be installed on the local machine and the configuration file should be modified accordingly [see below](/Configuration)
+-  mysql should to be installed on the local machine and the configuration file should be modified accordingly [see below](https://github.com/kaustav202/TV-Show-Management-App/edit/main/README.md#configuration)
 - Create a new schema tvshows and table shows in the connected mysql server (Just Copy the following code block and execute in a mysql script)
 ``` 
 create database if not exists tvshows;
