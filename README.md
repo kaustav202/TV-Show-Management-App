@@ -12,7 +12,7 @@ End to End Full Stack Application for easy management and tracking of tv shows a
 
 ## Features
 
-- [x]	Users are able to create new tv shows to be tracked with these info -Title, Streaming App, Rating and Review
+- [x]	A user can log in and create new tv shows to be tracked with these info -Title, Streaming App, Rating and Review
 - [x]	Users can add or delete a show from the list. 
 - [x]	Users can update any of the TV series related data.
 - [x]	JWT token used for user Authentication in each api call from the front-end to access any service 
