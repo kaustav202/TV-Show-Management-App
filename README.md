@@ -1,5 +1,5 @@
 # TV-Show-Management-App
-End to End Full Stack Application for easy management and tracking of shows and web series watched by anyone.
+End to End Full Stack Application for easy management and tracking of tv shows and web series watched by anyone.
 
 ## Tech Stack
 
@@ -57,3 +57,9 @@ All the configs for server are located in .env file which can be modified, howev
 - [x] Storage of User Credentials in the application backend itself (since this is a demo app), which also makes it more efficient by saving database lookup time
 - [x] User state not required for update and delete operations since once the user is authenticated by the backend, only the associated items are returned which can be targeted by using the id only
 - [x] ES Lint Configuration: Default, Prettier Configuration: Default  
+
+## Further Improvements
+
+- The user credentials can be stored in the database to persist existing users across server reloads
+- Sensitive information can be stored as environment variables and derived from system
+- Additional info and images related to the entered topic can be derived by using public apis to enrich the user experience
