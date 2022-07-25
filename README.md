@@ -31,8 +31,8 @@ use tvshows;
 CREATE TABLE IF NOT EXISTS `shows` (`id` int NOT NULL AUTO_INCREMENT,`rating` int NOT NULL,`title` varchar(45) NOT NULL,`review` mediumtext NOT NULL,`platform` varchar(45) NOT NULL,`user` varchar(45) NOT NULL,PRIMARY KEY (`id`),UNIQUE KEY `id_UNIQUE` (`id`))
 ```
 - Download the project as zip file and extract to any folder on your local machine
-- Open the terminal and navigate to the client directory inside the project `cd path-to-project-dir/TVshows/client`, Install dependencies for the client (React App) `npm i ` and start the React Client `npm start`
-- Navigate to server directory inside the project `cd path-to-project-dir/TVshows/server`,Install dependencies for the server (Node Server) `npm i ` and start the server `npm start` / `npm run devStart` (for development)
+- Open the terminal and navigate to the client directory inside the project `cd path-to-project-dir/TV-Show-Management-App-master/TVshows/client`, Install dependencies for the client (React App) `npm i ` and start the React Client `npm start`
+- Navigate to server directory inside the project `cd path-to-project-dir/TV-Show-Management-App-master/TVshows/server`,Install dependencies for the server (Node Server) `npm i ` and start the server `npm start` / `npm run devStart` (for development)
 - If the backend was setup correctly you should see this message
 > server running on port 4000
 > connected to database
