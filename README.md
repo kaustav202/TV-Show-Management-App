@@ -10,6 +10,15 @@ End to End Full Stack Application for easy management and tracking of shows and 
 - Ant Design (UI)
 - jsonwebtoken
 
+## Features
+
+- [x]	Users are able to create new tv shows to be tracked with these info -Title, Streaming App, Rating and Review
+- [x]	Users can add or delete a show from the list. 
+- [x]	Users can update any of the TV series related data.
+- [x]	JWT token used for user Authentication in each api call from the front-end to access any service 
+
+
+
 ## Project Setup
 
 -  mysql should to be installed on the local machine and the configuration file should be modified accordingly [see below](https://github.com/kaustav202/TV-Show-Management-App/edit/main/README.md#configuration)
@@ -31,9 +40,20 @@ CREATE TABLE IF NOT EXISTS `shows` (`id` int NOT NULL AUTO_INCREMENT,`rating` in
 
 ## Configuration 
 
-- All the configs for server are located in .env file which can be modified, however the default values for the database are these, be sure to change the username and password with that of your own.
+All the configs for server are located in .env file which can be modified, however the default values for the database are these, be sure to change the username and password with that of your own.
 
 - DB_PASS=new_mys@59
 - DB_HOST=localhost
 - DB_USER=root
 - DB_DATABASE=tvshows
+
+
+## Additional
+
+- [x] Existing users are allowed access only on password validation while new users can login directly and start using the app
+- [x] Local storage and cookies used to store user's login state and persist application across refresh without the need for backend lookup
+- [x] Front end features interactive menu based navigation and also pagination is implemented to display all of the user's shows in a concise manner
+- [x] Different sections are rendered without redirecting to different urls, making it a truly single page application
+- [x] Storage of User Credentials in the application backend itself (since this is a demo app), which also makes it more efficient by saving database lookup time
+- [x] User state not required for update and delete operations since once the user is authenticated by the backend, only the associated items are returned which can be targeted by using the id only
+- [x] ES Lint Configuration: Default, Prettier Configuration: Default  
