@@ -1,0 +1,41 @@
+POST http://localhost:4000/api
+Content-Type: application/json
+
+{
+    "title": "cyberpunk 2077",
+    "platform": "steam",
+    "review" : "Awesome game must play for everyone.",
+    "rating": 5
+}
+
+###
+
+PATCH http://localhost:4000/api/2
+Content-Type: application/json
+
+{
+    "review" : "adulterated review",
+    "rating" : 2
+}
+
+###
+
+DELETE http://localhost:4000/api/2
+
+
+###
+
+POST http://localhost:4000/api/login
+Content-Type: application/json
+
+{
+    "username": "kaustav",
+    "pass" : "kaustav123"
+}
+
+
+###
+
+POST http://localhost:4000/api/testjwt
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2F1c3RhdiIsImlhdCI6MTY1ODU5MjUwNX0.xjQoxhRPVmBhFEfxX6fhhidx_S3LrT-11C2jL_98vEc

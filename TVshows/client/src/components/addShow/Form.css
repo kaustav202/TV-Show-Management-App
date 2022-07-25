@@ -1,0 +1,395 @@
+
+.form-wrapper-add {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+    background-color: hsla(245, 44%, 90%, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 100%;
+  }
+  
+  .form-wrapper-add form {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .form-wrapper-add h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  
+
+  
+  .form-wrapper-add textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 15px 0px;
+    outline: 0;
+    padding: 10px 25px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    border-radius: 10px;
+    
+  }
+
+  .form-wrapper-add textarea{
+    padding: 15px;
+    margin-top: 3px;
+  }
+
+  .n2{
+    margin-bottom: 7px;
+  }
+  
+  /* input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  } */
+  
+  .form-wrapper-add select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 10px;
+  }
+  
+  .form-wrapper-add button {
+    padding: 19px 20px 18px 20px;
+    color: #FFF;
+    background-color:  #a01414a7;
+    font-size: 22px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border:none;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .form-wrapper-add button:hover{
+    cursor: pointer;
+  }
+  
+  .form-wrapper-add fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  .form-wrapper-add legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  .form-wrapper-add label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-wrapper-add label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .form-wrapper-add .number {
+    background-color: #a01414a7;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+ 
+  .add-name{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+
+  .add-platform{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 0px;
+    border-radius: 10px;
+  }
+
+  .popup {
+    display: block;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .popcard {
+    background-color: white;
+    margin: 10% auto;
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 15px 0 black;
+    animation: popup 0.5s;
+  }
+  
+  @keyframes popup {
+    from {
+      opacity: 0;
+    }
+    to { 
+      opacity: 1;
+    }
+  }
+
+
+div.ant-popover{
+  display: block;
+  top: 5vh !important;
+  left: 70vw !important;
+  background-color: rgba(213, 255, 47, 0.758);
+  transition: all;
+  width:400px;
+  border-radius: 8px;
+  transition: all 0.2s 1s ease-;
+  visibility:visible
+}
+
+.msg-success{
+  color: rgb(90, 128, 0);
+}
+
+.info-success{
+  color: maroon;
+}
+
+/* The necessities */
+.onclick-menu {
+	position: absolute;
+	display: inline-block;
+  margin-top: 100px;
+  margin-left: 100px;
+  float: left;
+  clear: both;
+
+  
+}
+.onclick-menu:before {
+	content: "Finished ";
+  font-size: 16px;
+}
+.onclick-menu:focus {
+	pointer-events: none;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+	opacity: 1;
+	visibility: visible;
+}
+
+.onclick-menu-content {
+	pointer-events: auto;
+	position: absolute;
+	z-index: 1;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.5s;
+}
+
+.onclick-menu.no-pointer-events {
+	pointer-events: auto !important;
+}
+
+.onclick-menu.no-visibility .onclick-menu-content {
+	visibility: visible !important;
+	display: none;
+}
+
+.onclick-menu.no-visibility:focus .onclick-menu-content {
+	display: block;
+}
+
+.onclick-menu.no-opacity .onclick-menu-content {
+	opacity: 1 !important;
+}
+
+/*
+Eye candy 
+( colors courtesy of https://kuler.adobe.com/try-color-theme-3350110 )
+*/
+.onclick-menu {
+	padding: 10px;
+	margin: 0px 95vw 95vh 0px;
+	outline: 0;
+  position: fixed;
+  color: white;
+
+  animation-name: floater;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.onclick-menu:before {
+	padding: 4px 10px;
+	background-color: #44a4ab84;
+  border-radius: 8px;
+
+  
+	color: white;
+	border: 2px solid white;
+	text-align: left;
+	transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transform-origin: 50% 50%;
+}
+
+@keyframes floater {
+	0% {
+		transform: translate(148px, 78px);
+	}
+	100% {
+		transform: translate(148px, 84px);
+	}
+}
+
+.onclick-menu-content {
+	background-color: #9c1717a0;
+  background: transparent;
+	width: auto;
+	margin-top: 10px;
+	margin-left: 0;
+	padding: 0px;
+  
+  border-radius: 3px;
+}
+
+/* arrow for the expanding part */
+.onclick-menu-content:before {
+	content: "";
+	width: 0;
+	height: 0;
+/* 
+	border-bottom: 10px solid #364656;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	position: absolute;
+	top: -10px; */
+}
+
+.onclick-menu-content li {
+	color: #ffffff;
+	list-style-type: none;
+	white-space: nowrap;
+  padding: 2px;
+}
+
+.onclick-menu-content .redir-l{
+  border: solid 2px #25cfdbbb;
+  border-radius: 5px;
+}
+/* style the buttons */
+.onclick-menu-content button {
+	background: transparent;
+	border: none;
+	color: inherit;
+	cursor: inherit;
+	outline: 0;
+	cursor: pointer;
+  padding: 4px 5px;
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+
+}
+.onclick-menu-content  .redir:hover {
+	color: #0d0d0df6;
+  background-color: #84cae8f6;;
+}
+
+/* Codepen stuff */
+
+.onclick-menu {
+
+  text-align: left;
+}
+
+.form-wrapper-header{
+  position: absolute;
+  font-size: 28px !important;
+  width: 100%;
+  padding: 25px 30px;
+  float: left;
+  flex-basis: 100%;
+  top:0;
+}
+
+.form-wrapper-add .ant-breadcrumb{
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-wrapper-add form{
+  min-width: 600px !important;
+  padding-top: 20px;
+  margin: 20px 0px !important;
+  padding: 20px 55px 10px 45px;
+}
+
+.form-wrapper-add form button{
+  margin-top: 25px;
+}
+
+.form-wrapper-add fieldset {
+  margin-bottom: 10px !important;
+  border: none;
+}

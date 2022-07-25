@@ -1,0 +1,322 @@
+.update-wrapper {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+    background-color: hsla(245, 44%, 90%, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 100%;
+  }
+  
+  .update-wrapper form {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .update-wrapper h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  
+
+  
+  .update-wrapper textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 15px 0px;
+    outline: 0;
+    padding: 10px 25px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    border-radius: 10px;
+    
+  }
+
+  .update-wrapper textarea{
+    padding: 15px;
+    margin-top: 3px;
+  }
+
+  .n2{
+    margin-bottom: 7px;
+  }
+  
+  /* input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  } */
+  
+  .update-wrapper select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 10px;
+  }
+  
+  .update-wrapper button {
+    padding: 19px 20px 18px 20px;
+    color: #FFF;
+    background-color:  #a01414a7;
+    font-size: 22px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border:none;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .update-wrapper button:hover{
+    cursor: pointer;
+  }
+  
+  .update-wrapper fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  .update-wrapper legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  .update-wrapper label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .update-wrapper label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .update-wrapper .number {
+    background-color: #a01414a7;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+ 
+
+div.ant-popover{
+  display: block;
+  top: 5vh !important;
+  left: 70vw !important;
+  background-color: rgba(213, 255, 47, 0.758);
+  transition: all;
+  width:400px;
+  border-radius: 8px;
+  transition: all 0.2s 1s ease-;
+  visibility:visible
+}
+
+.msg-success{
+  color: rgb(90, 128, 0);
+}
+
+.info-success{
+  color: maroon;
+}
+
+/* The necessities */
+.update-wrapper .onclick-menu {
+	position: absolute !important;
+	display: inline-block;
+    margin-top: 90vh !important;
+    margin-left: 20vw !important;
+    float: left !important;
+    clear: both;
+}
+.update-wrapper .onclick-menu:before {
+	content: "Finished ";
+  font-size: 16px;
+}
+.update-wrapper .onclick-menu:focus {
+	pointer-events: none;
+}
+
+.update-wrapper .onclick-menu:focus .onclick-menu-content {
+	opacity: 1;
+	visibility: visible;
+}
+
+.update-wrapper .onclick-menu-content {
+	pointer-events: auto;
+	position: absolute;
+	z-index: 1;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.5s;
+}
+
+.update-wrapper .onclick-menu.no-pointer-events {
+	pointer-events: auto !important;
+}
+
+.update-wrapper .onclick-menu.no-visibility .onclick-menu-content {
+	visibility: visible !important;
+	display: none;
+}
+
+.update-wrapper .onclick-menu.no-visibility:focus .onclick-menu-content {
+	display: block;
+}
+
+.update-wrapper .onclick-menu.no-opacity .onclick-menu-content {
+	opacity: 1 !important;
+}
+
+/*
+Eye candy 
+( colors courtesy of https://kuler.adobe.com/try-color-theme-3350110 )
+*/
+.update-wrapper .onclick-menu {
+	padding: 10px;
+	margin: 0px 95vw 95vh 0px;
+	outline: 0;
+  position: fixed;
+  color: white;
+
+  animation-name: floater;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.update-wrapper .onclick-menu:before {
+	padding: 6px 12px;
+	background-color: #ab4444cc;
+  border-radius: 8px;
+
+  
+	color: white;
+	border: 2px solid white;
+	text-align: left;
+	transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transform-origin: 50% 50%;
+}
+
+@keyframes floater {
+	0% {
+		transform: translate(148px, 78px);
+	}
+	100% {
+		transform: translate(148px, 84px);
+	}
+}
+
+.update-wrapper .onclick-menu-content {
+	background-color: #9c1717a0;
+  background: transparent;
+	width: auto;
+	margin-top: 10px;
+	margin-left: 0;
+	padding: 0px;
+  
+  border-radius: 3px;
+}
+
+/* arrow for the expanding part */
+.update-wrapper .onclick-menu-content:before {
+	content: "";
+	width: 0;
+	height: 0;
+/* 
+	border-bottom: 10px solid #364656;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	position: absolute;
+	top: -10px; */
+}
+
+.update-wrapper .onclick-menu-content li {
+	color: #ffffff;
+	list-style-type: none;
+	white-space: nowrap;
+  padding: 2px;
+}
+
+.update-wrapper .onclick-menu-content .redir-l{
+  border: solid 2px #25cfdbbb;
+  border-radius: 5px;
+}
+/* style the buttons */
+.update-wrapper .onclick-menu-content button {
+	background: transparent;
+	border: none;
+	color: inherit;
+	cursor: inherit;
+	outline: 0;
+	cursor: pointer;
+  padding: 4px 5px;
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+
+}
+.update-wrapper .onclick-menu-content  .redir:hover {
+	color: #0d0d0df6;
+  background-color: #84cae8f6;;
+}
+
+/* Codepen stuff */
+
+.update-wrapper .onclick-menu {
+
+  text-align: left;
+}
+
+.item-header{
+  position: absolute;
+  font-size: 28px !important;
+  width: 100%;
+  padding: 25px 30px;
+  float: left;
+  flex-basis: 100%;
+  top:0;
+}
+
+.update-wrapper .ant-breadcrumb{
+  font-size: 16px;
+  width: 100%;
+}
+
+.update-wrapper form{
+  min-width: 700px !important;
+  padding: 40px;
+}
+
+.update-wrapper form button{
+  margin-top: 25px;
+}

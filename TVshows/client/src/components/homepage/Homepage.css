@@ -1,0 +1,22 @@
+.ant-col .ant-col-xs-24 .ant-col-sm-12 .ant-col-md-8 .ant-col-lg-8{
+    width: 100%;
+}
+.user-info{
+    color: white;
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    padding: 5px 0px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+
+.home-empty-info{
+    padding-top: 20px;
+    padding-left: 50px;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+}

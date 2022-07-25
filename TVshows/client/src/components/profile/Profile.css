@@ -1,0 +1,36 @@
+.profile-wrapper{
+    background-color: hsla(245, 44%, 90%, 1);
+    height: 100%;
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.profile-header{
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.profile-info{
+    padding-top: 20px;
+    padding-left: 50px;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Open Sans';
+}
+
+.profile-header .ant-breadcrumb ol{
+    width: 100vw !important;
+    padding-left: 30px !important;
+  }
+
+  .profile-header .ant-breadcrumb{
+    width: fit-content;
+  }
+
+  .profile-info-user{
+    color: rgb(73, 141, 184);
+    font-family: 'Open Sans';
+  }
