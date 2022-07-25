@@ -12,7 +12,7 @@ End to End Full Stack Application for easy management and tracking of shows and 
 
 ## Project Setup
 
--  mysql should to be installed on the local machine and the configuration file should be modified accordingly [see below]
+-  mysql should to be installed on the local machine and the configuration file should be modified accordingly [see below](/Configuration)
 - Create a new schema tvshows and table shows in the connected mysql server (Just Copy the following code block and execute in a mysql script)
 ``` 
 create database if not exists tvshows;
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `shows` (`id` int NOT NULL AUTO_INCREMENT,`rating` in
 > connected to database
 - The application is now live on http://localhost:3000 which can be opened in the browser
 
-## Cconfiguration 
+## Configuration 
 
 - All the configs for server are located in .env file which can be modified, however the default values for the database are these, be sure to change the username and password with that of your own.
 
