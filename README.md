@@ -9,13 +9,34 @@ End to End Full Stack Application for easy management and tracking of tv shows a
 - Axios (API Calls)
 - Ant Design (UI)
 
+## Endpoints
+
+- <b>POST &nbsp; http://localhost:4000/api/login</b> </br> 
+Login route handles password validation and user authentication sets up state for the user in the application,</br> only endpoint accessible initially. </br>
+PARAMETERS ->  body: {username, pass}
+
+- **GET &nbsp; http://localhost:4000/api** </br>
+Returns all shows created by logged in user after authentication </br>
+PARAMETERS -> headers: { Authorization : `BEARER token` }
+ 
+- **POST &nbsp; http://localhost:4000/api** </br>
+Accepts info for a new record ( show ) for the logged in user and transacts it to the database. </br>
+PARAMETERS -> body: {title, platform, rating, review}, headers: { Authorization : `BEARER token` }
+
+- **PATCH &nbsp; http://localhost:4000/api/:id** </br>
+Updates a record identified by the parameter id passed through url </br>
+PARAMETERS -> body: { review, rating }
+
+- **DELETE &nbsp; http://localhost:4000/api/:id** </br>
+Deletes the given record identified by the id in the database
+
+
 ## Features
 
 - [x]	A user can log in and create new tv shows to be tracked with these info -Title, Streaming App, Rating and Review
 - [x]	Users can add or delete a show from the list. 
 - [x]	Users can update any of the TV series related data.
 - [x]	JWT token used for user Authentication in each api call from the front-end to access any service 
-
 
 
 ## Project Setup
