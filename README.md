@@ -8,7 +8,6 @@ End to End Full Stack Application for easy management and tracking of tv shows a
 - Mysql (Database)
 - Axios (API Calls)
 - Ant Design (UI)
-- jsonwebtoken
 
 ## Features
 
@@ -30,7 +29,7 @@ use tvshows;
 
 CREATE TABLE IF NOT EXISTS `shows` (`id` int NOT NULL AUTO_INCREMENT,`rating` int NOT NULL,`title` varchar(45) NOT NULL,`review` mediumtext NOT NULL,`platform` varchar(45) NOT NULL,`user` varchar(45) NOT NULL,PRIMARY KEY (`id`),UNIQUE KEY `id_UNIQUE` (`id`))
 ```
-- Download the project as zip file and extract to any folder on your local machine
+- Download the project as zip file and extract to any folder on your local machine or fork this repo and clone it in your local machine.
 - Open the terminal and navigate to the client directory inside the project `cd path-to-project-dir/TV-Show-Management-App-master/TVshows/client`, Install dependencies for the client (React App) `npm i ` and start the React Client `npm start`
 - Navigate to server directory inside the project `cd path-to-project-dir/TV-Show-Management-App-master/TVshows/server`,Install dependencies for the server (Node Server) `npm i ` and start the server `npm start` / `npm run devStart` (for development)
 - If the backend was setup correctly you should see this message
