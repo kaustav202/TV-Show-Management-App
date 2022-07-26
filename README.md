@@ -67,7 +67,7 @@ All the configs for server are located in .env file which can be modified, howev
 - DB_USER=root
 - DB_DATABASE=tvshows
 
-## Docker Config
+## Docker Configuration
 
 The application can be easily containerized through docker using the config files provided in the applicaton, assuming docker is installed on your local machine.
 
@@ -79,7 +79,7 @@ The docker-compose.yml file allows to set up all these service and start the con
 - Replace the the image for the react-client and the node-server with the names of respective tags specified in the previous build step. 
 - Inside the root of project directory run `docker-compose up`
 
-The third service which is the database doesn't have to be installed and built from local machine, the official mysql image already shipped from docker-hub availa can be used as the base image which place the service inside docker environment. The init.sql file in root directory holds the script to create initial database schema and the table, it is automatically run on container startup
+The third service which is the database doesn't have to be installed and built from local machine, the official mysql image already shipped from docker-hub can be used as the base image which places the service inside docker environment. The init.sql file in root directory holds the script to create initial database schema and the table, it is automatically run on container startup
 - If the database values have changed in server config mentioned in the last section, reflect those in MYSQL_ROOT_USER and MYSQL_ROOT_PASSWORD options of the mysql image in docker-compose file before running docker-compose-up
 
 
