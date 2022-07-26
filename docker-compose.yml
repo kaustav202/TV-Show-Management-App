@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  react-client:
+    image: kaustav/react-client
+    stdin_open: true
+    ports:
+      - "3000:3000"
+
+  node-server:
+    image: kaustav/node-server
+    ports:
+      - "4000:4000"
+    depends_on:
+      - database
+
+  database:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    restart: always
+    command: --init-file /data/application/init.sql
+    volumes:
+        - ./init.sql:/data/application/init.sql
+        - db-data:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_USER: root
+        MYSQL_ROOT_PASSWORD: new_mys@59
+        MYSQL_DATABASE: tvshows
+
+volumes:
+  db-data:
+    driver: local
